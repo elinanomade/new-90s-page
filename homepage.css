@@ -1,0 +1,131 @@
+body {
+  background: linear-gradient(
+    to right,
+    rgb(199, 244, 65),
+    rgb(232, 197, 111),
+    rgb(246, 79, 89)
+  );
+}
+h1 {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  /***background-color: rgb(88, 23, 53);
+  box-sizing: border-box;
+  border: dotted 3px pink;***/
+  text-shadow: 3px 3px 1px rgb(238, 103, 204);
+  color: rgb(151, 233, 163);
+  font-size: 36px;
+}
+em {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(48, 54, 179);
+}
+.navclass { 
+  background-color: beige;
+}
+.links {
+  
+}
+ul {
+  text-align: center;
+  background-color: rgb(88, 23, 53);
+  box-sizing: border-box;
+  border: dotted 3px pink;
+  color: white;
+  background-image: url(glitter.gif);
+}
+a {
+  color: honeydew;
+}
+h2 {
+  text-align: center;
+  background-color: rgb(204, 53, 204);
+  box-sizing: border-box;
+  font-size: 18px;
+  color: white;
+}
+
+h2,
+ul {
+  padding: 20px 10px;
+  margin: 20px auto;
+  max-width: 500px;
+}
+h3 {
+  text-align: center;
+  background-color: transparent aliceblue 0.5;
+  box-sizing: border-box;
+  font-size: 18px;
+  border: rgb(58, 22, 58) dashed 3px;
+}
+
+.container {
+}
+@media screen and (min-width: 600px) {
+  .container {
+    display: flex;
+  }
+  .links {
+    display: flex;
+  }
+  .navclass {
+    display: inline-flex;
+  }
+}
+
+.box {
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  max-width: 380px;
+  white-space: normal;
+  margin: 20px auto;
+  box-sizing: border-box;
+  background-color: rgb(103, 103, 227);
+  padding: 20px 10px;
+  border: 5px solid #e87de8;
+  box-sizing: border-box;
+}
+
+.box p {
+}
+
+img {
+  max-width: 100%;
+  border-image: auto;
+  image-orientation: center;
+}
+.box2 {
+  background-color: rgb(187, 82, 152);
+  animation: snazzyAnimation 1s infinite;
+}
+
+.box2:hover {
+  background-color: rgb(105, 21, 202);
+}
+
+@keyframes snazzyAnimation {
+  0% {
+    background-color: rgb(187, 82, 152);
+  }
+  50% {
+    background-color: rgb(108, 20, 192);
+  }
+  100% {
+    background-color: rgb(161, 40, 129);
+  }
+  50% {
+    background-color: rgb(187, 82, 152);
+  }
+  100% {
+    background-color: rgb(204, 53, 204);
+  }
+}
+
+.my-element {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: infinite; /* don't forget to set a duration! */
+}
