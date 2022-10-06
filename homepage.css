@@ -22,6 +22,8 @@ em {
 }
 .navclass {
   background-color: beige;
+  display: inline;
+  align-items: center;
 }
 .links {
 }
@@ -69,6 +71,9 @@ h3 {
   }
   .navclass {
     display: inline-flex;
+  }
+  .logo {
+    display: flex; /*how to make them that they follow the size as I make scren smaller?*/
   }
 }
 
