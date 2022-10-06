@@ -9,5 +9,5 @@ function sayHello() {
 
 button.addEventListener('click', sayHello);
 
-new cursoreffects.fairyDustCursor({colors: ["#ff0000", "#00ff00", "#0000ff"]});
+new cursoreffects.fairyDustCursor({colors: ["#C21E56", "#E56E94", "#1DC28B", "#E4E66E", "#FFFFAA", "#FFFFFF"]});
 

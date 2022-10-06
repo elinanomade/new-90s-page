@@ -13,21 +13,26 @@ h1 {
   box-sizing: border-box;
   border: dotted 3px pink;***/
   text-shadow: 3px 3px 1px rgb(238, 103, 204);
-  color: rgb(151, 233, 163);
+  color: rgb(93, 74, 199);
   font-size: 36px;
 }
 em {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: rgb(48, 54, 179);
+  color: rgb(73, 232, 16);
+}
+.song {
+  background-color: #33045f;
 }
 .navclass {
   background-color: beige;
-  display: inline;
   align-items: center;
+  border: dotted 50px hotpink;
 }
 .links {
+  background-color:  rgb(88, 23, 53);
 }
-ul {
+
+.menu {
   text-align: center;
   background-color: rgb(88, 23, 53);
   box-sizing: border-box;
@@ -44,6 +49,7 @@ h2 {
   box-sizing: border-box;
   font-size: 18px;
   color: white;
+  font-family: cursive;
 }
 
 h2,
@@ -52,12 +58,16 @@ ul {
   margin: 20px auto;
   max-width: 500px;
 }
-h3 {
+.favphoto {
   text-align: center;
+  font-family: cursive;
   background-color: transparent aliceblue 0.5;
   box-sizing: border-box;
-  font-size: 18px;
-  border: rgb(58, 22, 58) dashed 3px;
+  font-size: 38px;
+  border: rgb(254, 250, 7) dashed 8px;
+  background-color: #33045f;
+  color: #e6d110;
+  text-shadow: 3px 3px 1px rgb(39, 60, 245);
 }
 
 .container {
@@ -75,38 +85,53 @@ h3 {
   .logo {
     display: flex; /*how to make them that they follow the size as I make scren smaller?*/
   }
+  .favphoto {
+    display: flexbox;
+  }
+  .video {
+    display: flex;
+  }
 }
 
 .box {
-  font-weight: bold;
-  text-align: center;
+//**  text-align: center; **//
   border-radius: 5px;
   max-width: 380px;
-  white-space: normal;
   margin: 20px auto;
   box-sizing: border-box;
   background-color: rgb(103, 103, 227);
   padding: 20px 10px;
   border: 5px solid #e87de8;
-  box-sizing: border-box;
+  color: beige;
+  font-family: cursive;
+  
 }
 
-.box p {
+title {
+  color: white;
+  font-weight: bold;
 }
 
-img {
+.boximage {
   max-width: 100%;
   border-image: auto;
   image-orientation: center;
+  float: left;
+  width:  320;
+  height: 180px;
+  object-fit: cover;
 }
 .box2 {
   background-color: rgb(187, 82, 152);
   animation: snazzyAnimation 1s infinite;
 }
+.logo {
+  padding-left: 1em;
+}
 
 .box2:hover {
   background-color: rgb(105, 21, 202);
-}
+} 
 
 @keyframes snazzyAnimation {
   0% {
@@ -129,7 +154,63 @@ img {
 .my-element {
   display: inline-block;
   margin: 0 0.5rem;
-
   animation: bounce; /* referring directly to the animation's @keyframe declaration */
   animation-duration: infinite; /* don't forget to set a duration! */
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  background-color: #e6d110;
+  margin: 10%;
+  text-align: center;
+  color: #1c0334;
+  font-family: cursive;
+  font-size: 25px;
+  background-image: url(oldcameras.jpg);
+}
+.filmstrip {
+  background-color: aliceblue;
+  --background: rgba(96, 167, 224, 0.35);
+  --size: 10px;
+  background-image: linear-gradient(
+      to right,
+      var(--background) var(--size),
+      transparent var(--size)
+    ),
+    linear-gradient(
+      to bottom,
+      var(--background) var(--size),
+      transparent var(--size)
+    ),
+    linear-gradient(
+      to right,
+      var(--background) var(--size),
+      transparent var(--size)
+    ),
+    linear-gradient(
+      to bottom,
+      var(--background) var(--size),
+      transparent var(--size)
+    ),
+    linear-gradient(
+      to bottom,
+      transparent var(--size),
+      var(--background) var(--size)
+    );
+  background-size: calc(var(--size) * 2) var(--size),
+    calc(var(--size) * 2) var(--size), calc(var(--size) * 2) var(--size),
+    calc(var(--size) * 2) var(--size), 100% calc(100% - var(--size) * 3);
+  background-repeat: repeat-x;
+  background-position: 0 var(--size), top left, 0 calc(100% - var(--size)),
+    bottom left, 0 var(--size);
+  padding: calc(var(--size) * 3) calc(var(--size) * 2.5);
+  box-sizing: border-box;
+}
+footer {
+  background-color: rgb(88, 23, 53);
+  text-align: center;
+  border: dotted 3px pink;
+  color: white;
+  background-image: url(glitter.gif);
 }
