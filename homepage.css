@@ -86,7 +86,7 @@ ul {
     display: flex; /*how to make them that they follow the size as I make scren smaller?*/
   }
   .favphoto {
-    display: flexbox;
+    display: flex;
   }
   .video {
     display: flex;
