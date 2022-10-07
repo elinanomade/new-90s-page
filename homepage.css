@@ -58,6 +58,7 @@ ul {
   margin: 20px auto;
   max-width: 500px;
 }
+
 .favphoto {
   text-align: center;
   font-family: cursive;
@@ -68,8 +69,13 @@ ul {
   background-color: #33045f;
   color: #e6d110;
   text-shadow: 3px 3px 1px rgb(39, 60, 245);
+  align-items: center;
 }
-
+img{
+  max-width: 100%;
+  border-image: auto;
+  image-orientation: center;
+}
 .container {
 }
 @media screen and (min-width: 600px) {
@@ -86,10 +92,10 @@ ul {
     display: flex; /*how to make them that they follow the size as I make scren smaller?*/
   }
   .favphoto {
-    display: flex;
+    display: flow-root;
   }
   .video {
-    display: flex;
+    display: inline-flex;
   }
 }
 
