@@ -2,8 +2,8 @@ let button = document.getElementById('myCoolButton');
 
 function sayHello() {
     let myElement = document.createElement('h2');
-    myElement.innerHTML = 'DARK SECRETS OF FURBYS';
-    alert('Helloooooo. Be aware of what you will find out.');
+    myElement.innerHTML = 'Here would be a photo but I havent figured out yet JS so well';
+    alert('Thank you for smiling. I just took a photo of you');
     document.getElementById('container').appendChild(myElement);
 }
 
